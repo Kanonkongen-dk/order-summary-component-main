@@ -1,0 +1,108 @@
+@use '../abstracts/' as *;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    box-shadow: 0px 20px 25px -7px var(--clr-neutral-400);
+    border-radius: 1.3rem;
+    background-color: var(--clr-secondary-100);
+
+    &__header {
+        height: 155px;
+        background: url('../../images/illustration-hero.svg') top center / contain no-repeat;
+        border-radius: 1.2rem 1.2rem 0 0;
+    }
+
+    &__body {
+        text-align: center;
+        padding: 2.375em 1.5em;
+
+        &--headline {
+            font-size: var(--fs-700);
+            font-weight: 900;
+            margin-bottom: 1.5em;
+        }
+
+        &--main {
+            color: var(--clr-neutral-200);
+        }
+    }
+}
+
+.payment {
+    margin: 1.5em 0;
+}
+
+// .card {
+//     display: flex;
+//     flex-direction: column;
+//     width: 19rem;
+//     height: 24.375rem;
+//     margin: auto;
+//     padding: 2.5625rem 0 0 2.625rem;
+
+//     @include mq(medium) {
+//         width: 19.1875rem;
+//         height: 31.25rem;
+//         padding: 3.0625rem 0 0 3.0625;
+//     }
+
+//     img {
+//         width: 55px;
+
+//         @include mq(medium) {
+//             width: 64px;
+//         }
+//     }
+
+//     .card--headline {
+//         font-family: var(--ff-primary-700);
+//         font-size: var(--fs-700);
+//         color: var(--clr-neutral-200);
+//         text-transform: uppercase;
+//         line-height: 1;
+//         margin-top: 2.25rem;
+
+//         @include mq(medium) {
+//             margin-top: 2.5rem;
+//         }
+//     }
+
+//     .card--copy {
+//         font-family: var(--ff-primary-400);
+//         font-size: var(--fs-400);
+//         color: var(--clr-neutral-100);
+//         width: 25ch;
+//         margin-top: 1.875rem;
+//         margin-bottom: 1.3125rem;
+
+//         @include mq(medium) {
+//             width: 23ch;
+//             margin-bottom: 5.3125rem;
+//             line-height: 1.6;
+//         }
+//     }
+
+//     &__sedan {
+//         background-color: var(--clr-primary-100);
+//         border-radius: .6rem .6rem 0 0;
+
+//         @include mq(medium) {
+//             border-radius: .6rem 0 0 .6rem;
+//         }
+//     }
+
+//     &__suv {
+//         background-color: var(--clr-primary-200);
+//     }
+
+//     &__luxury {
+//         background-color: var(--clr-primary-300);
+//         border-radius: 0 0 .6rem .6rem;
+
+//         @include mq(medium) {
+//             border-radius: 0 .6rem .6rem 0;
+//         }
+//     }
+// }

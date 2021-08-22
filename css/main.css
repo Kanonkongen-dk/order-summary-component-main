@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --clr-primary-100: #e0e8ff;
+  --clr-primary-200: #3829e0;
+  --clr-secondary-100: white;
+  --clr-neutral-100: #f5f7ff;
+  --clr-neutral-200: #7280a7;
+  --clr-neutral-300: #1f2f56;
+  --clr-neutral-400: rgba(31, 47, 86, 0.4);
+  --fs-100: 0.6875rem;
+  --fs-400: 0.9375rem;
+  --fs-700: 1.3125rem;
+  --ff-primary-400: 'Red Hot Display', sans-serif;
+}
+@media only screen and (min-width: 65em) {
+  :root {
+    --fs-100: 0.6875rem;
+    --fs-400: 0.9375rem;
+    --fs-700: 2.5rem;
+  }
+}
+@media only screen and (min-width: 90em) {
+  :root {
+    --fs-100: 0.6875rem;
+    --fs-400: 0.9375rem;
+    --fs-700: 2.5rem;
+  }
+}
+
+.text-primary-100 {
+  color: #e0e8ff;
+}
+
+.bg-primary-100 {
+  color: #e0e8ff;
+}
+
+.text-primary-200 {
+  color: #3829e0;
+}
+
+.bg-primary-200 {
+  color: #3829e0;
+}
+
+.text-secondary-100 {
+  color: white;
+}
+
+.bg-secondary-100 {
+  color: white;
+}
+
+.text-neutral-100 {
+  color: #f5f7ff;
+}
+
+.bg-neutral-100 {
+  color: #f5f7ff;
+}
+
+.text-neutral-200 {
+  color: #7280a7;
+}
+
+.bg-neutral-200 {
+  color: #7280a7;
+}
+
+.text-neutral-300 {
+  color: #1f2f56;
+}
+
+.bg-neutral-300 {
+  color: #1f2f56;
+}
+
+.text-neutral-400 {
+  color: rgba(31, 47, 86, 0.4);
+}
+
+.bg-neutral-400 {
+  color: rgba(31, 47, 86, 0.4);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  box-shadow: 0px 20px 25px -7px var(--clr-neutral-400);
+  border-radius: 1.3rem;
+  background-color: var(--clr-secondary-100);
+}
+.card__header {
+  height: 155px;
+  background: url("../../images/illustration-hero.svg") top center/contain no-repeat;
+  border-radius: 1.2rem 1.2rem 0 0;
+}
+.card__body {
+  text-align: center;
+  padding: 2.375em 1.5em;
+}
+.card__body--headline {
+  font-size: var(--fs-700);
+  font-weight: 900;
+  margin-bottom: 1.5em;
+}
+.card__body--main {
+  color: var(--clr-neutral-200);
+}
+
+.payment {
+  margin: 1.5em 0;
+}
+
+.attribution {
+  font-size: var(--fs-100);
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--clr-neutral-300);
+}
+
+body {
+  font-family: var(--ff-primary-400);
+  background: var(--clr-neutral-100) url("../../images/pattern-background-mobile.svg") center top no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main.css.map */
